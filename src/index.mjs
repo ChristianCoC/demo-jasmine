@@ -1,7 +1,21 @@
 class ToDoList {
     constructor() {
-        this.list = [];
+        this.ToDoList = [];
     }
+
+    add(item) {
+        this.ToDoList.push(item);
+    }
+
+    remove() {
+        this.ToDoList.pop();
+    }
+
+    get() {
+        return this.ToDoList;
+    }
+
 }
 
-module.exports = ToDoList
+
+export default ToDoList;
